@@ -10,18 +10,18 @@
 
 ## 下载
 
-**当前源码版本：0.1.3 · 本页下载：0.1.1 · Windows x64 / Android · 开发快照**
+**当前版本：0.1.3 · Windows x64 / Android 三架构 · 固定签名预发布**
 
-项目已更名为映川（YingChuan）。以下安装包与截图来自更名前的历史版本。下载附件的对外文件名已统一为映川；包内文件名、安装标识及界面仍以未经修改的原包为准。构建信息为分发摘要。页首标识已采用正式精修 A，本页历史安装包没有因品牌更新重新构建，不表示已发布带新视觉的0.1.3安装包。
+本次安装包从源码仓库 main 的 `3b1d9b0e2e096203cba6156b3aee241033ca4823` 本地构建，采用映川品牌、安装标识及固定 Android 发布证书。先在源码仓库发布并下载校验，再将相同文件发布到本仓库；仍为预发布版本。
 
 ### Windows
 
 | 安装方式 | 下载 | 说明 |
 | --- | --- | --- |
-| 便携启动器 | [Windows x64 EXE](https://github.com/yingchuan-media/yingchuan-releases/releases/download/windows-v0.1.1/yingchuan-0.1.1-windows-x64.exe) | 下载后运行，包含完整运行资源 |
-| 完整运行目录 | [Windows x64 ZIP](https://github.com/yingchuan-media/yingchuan-releases/releases/download/windows-v0.1.1/yingchuan-0.1.1-windows-x64.zip) | 全部解压后运行目录中的主程序，保留 DLL、`data` 与其他资源 |
-| 文件校验 | [SHA256SUMS.txt](https://github.com/yingchuan-media/yingchuan-releases/releases/download/windows-v0.1.1/SHA256SUMS.txt) | 核对下载文件是否完整 |
-| 构建信息 | [BUILD_METADATA.json](https://github.com/yingchuan-media/yingchuan-releases/releases/download/windows-v0.1.1/BUILD_METADATA.json) | 查看版本、构建来源与文件摘要 |
+| 便携启动器 | [Windows x64 EXE](https://github.com/yingchuan-media/yingchuan-releases/releases/download/app-v0.1.3-local-3b1d9b0e2e09/yingchuan-0.1.3-windows-x64.exe) | 下载后运行，包含完整运行资源 |
+| 完整运行目录 | [Windows x64 ZIP](https://github.com/yingchuan-media/yingchuan-releases/releases/download/app-v0.1.3-local-3b1d9b0e2e09/yingchuan-0.1.3-windows-x64.zip) | 全部解压后运行目录中的主程序，保留 DLL、`data` 与其他资源 |
+| 文件校验 | [SHA256SUMS.txt](https://github.com/yingchuan-media/yingchuan-releases/releases/download/app-v0.1.3-local-3b1d9b0e2e09/SHA256SUMS.txt) | 核对下载文件是否完整 |
+| 构建信息 | [BUILD_METADATA.json](https://github.com/yingchuan-media/yingchuan-releases/releases/download/app-v0.1.3-local-3b1d9b0e2e09/BUILD_METADATA.json) | 查看版本、构建来源与文件摘要 |
 
 ### Android
 
@@ -29,13 +29,13 @@
 
 | 架构 | 下载 |
 | --- | --- |
-| ARM64（arm64-v8a） | [Android ARM64 APK](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/yingchuan-0.1.1-debug-signed-arm64-v8a.apk) |
-| ARMv7（armeabi-v7a） | [Android ARMv7 APK](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/yingchuan-0.1.1-debug-signed-armeabi-v7a.apk) |
-| x86_64 | [Android x86_64 APK](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/yingchuan-0.1.1-debug-signed-x86_64.apk) |
-| 文件校验 | [Android SHA256SUMS.txt](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/SHA256SUMS.txt) |
-| 构建信息 | [Android BUILD_METADATA.json](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/BUILD_METADATA.json) |
+| ARM64（arm64-v8a） | [Android ARM64 APK](https://github.com/yingchuan-media/yingchuan-releases/releases/download/app-v0.1.3-local-3b1d9b0e2e09/yingchuan-0.1.3-arm64-v8a.apk) |
+| ARMv7（armeabi-v7a） | [Android ARMv7 APK](https://github.com/yingchuan-media/yingchuan-releases/releases/download/app-v0.1.3-local-3b1d9b0e2e09/yingchuan-0.1.3-armeabi-v7a.apk) |
+| x86_64 | [Android x86_64 APK](https://github.com/yingchuan-media/yingchuan-releases/releases/download/app-v0.1.3-local-3b1d9b0e2e09/yingchuan-0.1.3-x86_64.apk) |
+| 文件校验 | [Android SHA256SUMS.txt](https://github.com/yingchuan-media/yingchuan-releases/releases/download/app-v0.1.3-local-3b1d9b0e2e09/SHA256SUMS.txt) |
+| 构建信息 | [Android BUILD_METADATA.json](https://github.com/yingchuan-media/yingchuan-releases/releases/download/app-v0.1.3-local-3b1d9b0e2e09/BUILD_METADATA.json) |
 
-**Android 包使用本次构建生成的临时测试签名，属于预发布版本。** APK 使用 Release 模式编译，保留历史版本的内置安装标识。它无法覆盖安装使用其他证书签名的版本；安装前请先备份需要保留的资料。临时签名不承诺与后续构建兼容升级。
+**Android 包使用映川专用固定发布签名，属于预发布版本。** 三个 APK 均使用 Release 模式编译，包名为 `com.yingchuan.yingchuan`，后续正式发布复用同一证书。证书 SHA-256：`89b83acb459659edc357c742e76fdb8ee6f913a5d24877ff3eaf7bfb943470f0`。其他证书签名的旧测试 APK 无法直接覆盖升级，安装前请先备份需要保留的资料。
 
 其他版本见 [Windows 0.1.0](https://github.com/yingchuan-media/yingchuan-releases/releases/tag/windows-v0.1.0) 或[全部发布](https://github.com/yingchuan-media/yingchuan-releases/releases)。iOS 暂无下载包。
 
@@ -96,13 +96,13 @@
 
 ## 版本与验证
 
-Windows 发布文件沿用已验证安装包，EXE 与 ZIP 的 SHA-256 均与原始发布一致；构建信息为分发摘要，保留版本、来源提交、签名与文件摘要；对外附件更名不表示安装包已重新构建。
+0.1.3 的 Android 三架构 APK、Windows 便携 EXE 和完整运行目录 ZIP 均由本次 main 源码在本机构建，未使用 GitHub Actions。发布附件包含统一的 `BUILD_METADATA.json` 与 `SHA256SUMS.txt`，记录源码、固定证书及各文件实际摘要；两个仓库的同名附件逐字节一致。
 
-Windows 0.1.1 已通过包完整性、版本、更新协议、隔离冷／热启动及两种包的原生核心、媒体探测、转封装和本地合成视频播放检查。
+Windows 已通过包完整性、x64 PE 与实际版本、更新协议、隔离冷／热启动，以及 EXE 解包和 ZIP 两种运行目录的原生核心、媒体探测、转封装与本地合成视频播放检查。旧品牌程序和重复原生核心库未打入新包。
 
-Android 0.1.1 三个架构包分别核验签名、包名、版本、原生架构、必需运行库和局域网页面资源，并提供 SHA-256 校验。尚未进行 Android 真机安装与播放验收。
+Android 三个架构分别核验实际固定签名、包名、版本、ABI、必需运行库、ZIP CRC 和局域网页面资源。51 项客户端更新测试通过；发布策略 46 项通过，2 项受 Windows 符号链接权限阻塞。尚未进行 Android 真机安装与播放验收。
 
-客户端目前为开发快照。真实站源、不同显卡驱动与跨设备使用仍需进一步验证；移动浏览器的物理手势、软键盘和全屏效果取决于浏览器支持情况。截图展示界面，不作为这些场景已经通过验收的证明。
+本地验证未请求站源图片或真实媒体，未完成全部界面、真实站源、不同显卡驱动与跨设备验收。移动浏览器的物理手势、软键盘和全屏效果仍需设备验证；本页保留的用户实拍截图来自历史版本，不作为本次构建已通过这些场景的证明。
 
 ## 问题反馈
 
