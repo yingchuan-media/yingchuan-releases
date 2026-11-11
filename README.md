@@ -1,16 +1,18 @@
-<p align="center"><img src="assets/app-icon.png" width="96" alt="映川图标"></p>
+<p align="center"><img src="assets/brand-icon.svg" width="96" alt="映川 · 澄青川流精修 A 图标"></p>
 
 # 映川 · 客户端下载
 
 映川是一款多端视频客户端，提供站源浏览、搜索、播放、追剧、观看历史与下载管理。Windows 客户端也可在局域网内向手机、平板的浏览器提供访问入口。
 
+正式品牌使用澄青川流精修 A（V2A），各平台统一采用深墨双青图标。可编辑[主标识](assets/brand-logo.svg)与[应用图标](assets/brand-icon.svg)随本仓库提供。
+
 本仓库提供映川已发布客户端、功能说明与实际界面截图。安装文件位于 [Releases](https://github.com/yingchuan-media/yingchuan-releases/releases)。
 
 ## 下载
 
-**当前版本：0.1.1 · Windows x64 / Android · 开发快照**
+**当前源码版本：0.1.3 · 本页下载：0.1.1 · Windows x64 / Android · 开发快照**
 
-项目已更名为映川（YingChuan）。以下安装包与截图来自更名前的历史版本。下载附件的对外文件名已统一为映川；包内文件名、安装标识及界面仍以未经修改的原包为准。构建信息为分发摘要，新身份客户端将在后续版本提供。
+项目已更名为映川（YingChuan）。以下安装包与截图来自更名前的历史版本。下载附件的对外文件名已统一为映川；包内文件名、安装标识及界面仍以未经修改的原包为准。构建信息为分发摘要。页首标识已采用正式精修 A，本页历史安装包没有因品牌更新重新构建，不表示已发布带新视觉的0.1.3安装包。
 
 ### Windows
 
