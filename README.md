@@ -1,23 +1,25 @@
-<p align="center"><img src="assets/app-icon.png" width="96" alt="短剧汇图标"></p>
+<p align="center"><img src="assets/app-icon.png" width="96" alt="映川图标"></p>
 
-# 短剧汇 · 客户端下载
+# 映川 · 客户端下载
 
-短剧汇是一款多端视频客户端，提供站源浏览、搜索、播放、追剧、观看历史与下载管理。Windows 客户端也可在局域网内向手机、平板的浏览器提供访问入口。
+映川是一款多端视频客户端，提供站源浏览、搜索、播放、追剧、观看历史与下载管理。Windows 客户端也可在局域网内向手机、平板的浏览器提供访问入口。
 
-本仓库提供已发布客户端、功能说明与实际界面截图。安装文件位于 [Releases](https://github.com/Grails125/duanjuapp-releases/releases)。
+本仓库提供映川已发布客户端、功能说明与实际界面截图。安装文件位于 [Releases](https://github.com/yingchuan-media/yingchuan-releases/releases)。
 
 ## 下载
 
 **当前版本：0.1.1 · Windows x64 / Android · 开发快照**
 
+项目已更名为映川（YingChuan）。以下下载包与截图来自更名前的历史版本，保留原有文件名、安装标识、界面及校验信息；新品牌客户端将在后续版本提供。
+
 ### Windows
 
 | 安装方式 | 下载 | 说明 |
 | --- | --- | --- |
-| 便携启动器 | [Windows x64 EXE](https://github.com/Grails125/duanjuapp-releases/releases/download/windows-v0.1.1/duanjuhui-0.1.1-windows-x64.exe) | 下载后运行，包含完整运行资源 |
-| 完整运行目录 | [Windows x64 ZIP](https://github.com/Grails125/duanjuapp-releases/releases/download/windows-v0.1.1/duanjuhui-0.1.1-windows-x64.zip) | 全部解压后运行 `duanjuhui.exe`，保留 DLL、`data` 与其他资源 |
-| 文件校验 | [SHA256SUMS.txt](https://github.com/Grails125/duanjuapp-releases/releases/download/windows-v0.1.1/SHA256SUMS.txt) | 核对下载文件是否完整 |
-| 构建信息 | [BUILD_METADATA.json](https://github.com/Grails125/duanjuapp-releases/releases/download/windows-v0.1.1/BUILD_METADATA.json) | 查看版本、构建来源与文件摘要 |
+| 便携启动器 | [Windows x64 EXE](https://github.com/yingchuan-media/yingchuan-releases/releases/download/windows-v0.1.1/duanjuhui-0.1.1-windows-x64.exe) | 下载后运行，包含完整运行资源 |
+| 完整运行目录 | [Windows x64 ZIP](https://github.com/yingchuan-media/yingchuan-releases/releases/download/windows-v0.1.1/duanjuhui-0.1.1-windows-x64.zip) | 全部解压后运行 `duanjuhui.exe`，保留 DLL、`data` 与其他资源 |
+| 文件校验 | [SHA256SUMS.txt](https://github.com/yingchuan-media/yingchuan-releases/releases/download/windows-v0.1.1/SHA256SUMS.txt) | 核对下载文件是否完整 |
+| 构建信息 | [BUILD_METADATA.json](https://github.com/yingchuan-media/yingchuan-releases/releases/download/windows-v0.1.1/BUILD_METADATA.json) | 查看版本、构建来源与文件摘要 |
 
 ### Android
 
@@ -25,15 +27,15 @@
 
 | 架构 | 下载 |
 | --- | --- |
-| ARM64（arm64-v8a） | [Android ARM64 APK](https://github.com/Grails125/duanjuapp-releases/releases/download/android-v0.1.1/duanjuhui-0.1.1-debug-signed-arm64-v8a.apk) |
-| ARMv7（armeabi-v7a） | [Android ARMv7 APK](https://github.com/Grails125/duanjuapp-releases/releases/download/android-v0.1.1/duanjuhui-0.1.1-debug-signed-armeabi-v7a.apk) |
-| x86_64 | [Android x86_64 APK](https://github.com/Grails125/duanjuapp-releases/releases/download/android-v0.1.1/duanjuhui-0.1.1-debug-signed-x86_64.apk) |
-| 文件校验 | [Android SHA256SUMS.txt](https://github.com/Grails125/duanjuapp-releases/releases/download/android-v0.1.1/SHA256SUMS.txt) |
-| 构建信息 | [Android BUILD_METADATA.json](https://github.com/Grails125/duanjuapp-releases/releases/download/android-v0.1.1/BUILD_METADATA.json) |
+| ARM64（arm64-v8a） | [Android ARM64 APK](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/duanjuhui-0.1.1-debug-signed-arm64-v8a.apk) |
+| ARMv7（armeabi-v7a） | [Android ARMv7 APK](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/duanjuhui-0.1.1-debug-signed-armeabi-v7a.apk) |
+| x86_64 | [Android x86_64 APK](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/duanjuhui-0.1.1-debug-signed-x86_64.apk) |
+| 文件校验 | [Android SHA256SUMS.txt](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/SHA256SUMS.txt) |
+| 构建信息 | [Android BUILD_METADATA.json](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/BUILD_METADATA.json) |
 
 **Android 包使用本次构建生成的临时测试签名，属于预发布版本。** APK 使用 Release 模式编译，包名为 `com.duanju.duanju_app`。它无法覆盖安装使用其他证书签名的版本；安装前请先备份需要保留的资料。临时签名不承诺与后续构建兼容升级。
 
-其他版本见 [Windows 0.1.0](https://github.com/Grails125/duanjuapp-releases/releases/tag/windows-v0.1.0) 或[全部发布](https://github.com/Grails125/duanjuapp-releases/releases)。iOS 暂无下载包。
+其他版本见 [Windows 0.1.0](https://github.com/yingchuan-media/yingchuan-releases/releases/tag/windows-v0.1.0) 或[全部发布](https://github.com/yingchuan-media/yingchuan-releases/releases)。iOS 暂无下载包。
 
 ## 功能
 
@@ -102,6 +104,6 @@ Android 0.1.1 三个架构包分别核验签名、包名、版本、原生架构
 
 ## 问题反馈
 
-可在 [Issues](https://github.com/Grails125/duanjuapp-releases/issues) 反馈问题。请提供客户端版本、设备与系统版本、操作步骤、预期结果和实际表现；涉及画面问题时可附截图。
+可在 [Issues](https://github.com/yingchuan-media/yingchuan-releases/issues) 反馈问题。请提供客户端版本、设备与系统版本、操作步骤、预期结果和实际表现；涉及画面问题时可附截图。
 
 提交前请移除账号、令牌、配对码、个人文件路径和带授权参数的播放地址。第三方组件的许可证随运行包提供。
