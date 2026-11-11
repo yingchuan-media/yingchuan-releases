@@ -10,14 +10,14 @@
 
 **当前版本：0.1.1 · Windows x64 / Android · 开发快照**
 
-项目已更名为映川（YingChuan）。以下下载包与截图来自更名前的历史版本，保留原有文件名、安装标识、界面及校验信息；新品牌客户端将在后续版本提供。
+项目已更名为映川（YingChuan）。以下安装包与截图来自更名前的历史版本。下载附件的对外文件名已统一为映川；包内文件名、安装标识及界面仍以未经修改的原包为准。构建信息为分发摘要，新身份客户端将在后续版本提供。
 
 ### Windows
 
 | 安装方式 | 下载 | 说明 |
 | --- | --- | --- |
-| 便携启动器 | [Windows x64 EXE](https://github.com/yingchuan-media/yingchuan-releases/releases/download/windows-v0.1.1/duanjuhui-0.1.1-windows-x64.exe) | 下载后运行，包含完整运行资源 |
-| 完整运行目录 | [Windows x64 ZIP](https://github.com/yingchuan-media/yingchuan-releases/releases/download/windows-v0.1.1/duanjuhui-0.1.1-windows-x64.zip) | 全部解压后运行 `duanjuhui.exe`，保留 DLL、`data` 与其他资源 |
+| 便携启动器 | [Windows x64 EXE](https://github.com/yingchuan-media/yingchuan-releases/releases/download/windows-v0.1.1/yingchuan-0.1.1-windows-x64.exe) | 下载后运行，包含完整运行资源 |
+| 完整运行目录 | [Windows x64 ZIP](https://github.com/yingchuan-media/yingchuan-releases/releases/download/windows-v0.1.1/yingchuan-0.1.1-windows-x64.zip) | 全部解压后运行目录中的主程序，保留 DLL、`data` 与其他资源 |
 | 文件校验 | [SHA256SUMS.txt](https://github.com/yingchuan-media/yingchuan-releases/releases/download/windows-v0.1.1/SHA256SUMS.txt) | 核对下载文件是否完整 |
 | 构建信息 | [BUILD_METADATA.json](https://github.com/yingchuan-media/yingchuan-releases/releases/download/windows-v0.1.1/BUILD_METADATA.json) | 查看版本、构建来源与文件摘要 |
 
@@ -27,13 +27,13 @@
 
 | 架构 | 下载 |
 | --- | --- |
-| ARM64（arm64-v8a） | [Android ARM64 APK](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/duanjuhui-0.1.1-debug-signed-arm64-v8a.apk) |
-| ARMv7（armeabi-v7a） | [Android ARMv7 APK](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/duanjuhui-0.1.1-debug-signed-armeabi-v7a.apk) |
-| x86_64 | [Android x86_64 APK](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/duanjuhui-0.1.1-debug-signed-x86_64.apk) |
+| ARM64（arm64-v8a） | [Android ARM64 APK](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/yingchuan-0.1.1-debug-signed-arm64-v8a.apk) |
+| ARMv7（armeabi-v7a） | [Android ARMv7 APK](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/yingchuan-0.1.1-debug-signed-armeabi-v7a.apk) |
+| x86_64 | [Android x86_64 APK](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/yingchuan-0.1.1-debug-signed-x86_64.apk) |
 | 文件校验 | [Android SHA256SUMS.txt](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/SHA256SUMS.txt) |
 | 构建信息 | [Android BUILD_METADATA.json](https://github.com/yingchuan-media/yingchuan-releases/releases/download/android-v0.1.1/BUILD_METADATA.json) |
 
-**Android 包使用本次构建生成的临时测试签名，属于预发布版本。** APK 使用 Release 模式编译，包名为 `com.duanju.duanju_app`。它无法覆盖安装使用其他证书签名的版本；安装前请先备份需要保留的资料。临时签名不承诺与后续构建兼容升级。
+**Android 包使用本次构建生成的临时测试签名，属于预发布版本。** APK 使用 Release 模式编译，保留历史版本的内置安装标识。它无法覆盖安装使用其他证书签名的版本；安装前请先备份需要保留的资料。临时签名不承诺与后续构建兼容升级。
 
 其他版本见 [Windows 0.1.0](https://github.com/yingchuan-media/yingchuan-releases/releases/tag/windows-v0.1.0) 或[全部发布](https://github.com/yingchuan-media/yingchuan-releases/releases)。iOS 暂无下载包。
 
@@ -94,7 +94,7 @@
 
 ## 版本与验证
 
-Windows 发布文件沿用已验证安装包，EXE 与 ZIP 的 SHA-256 均与原始发布一致；构建信息保留版本、来源提交和文件摘要。
+Windows 发布文件沿用已验证安装包，EXE 与 ZIP 的 SHA-256 均与原始发布一致；构建信息为分发摘要，保留版本、来源提交、签名与文件摘要；对外附件更名不表示安装包已重新构建。
 
 Windows 0.1.1 已通过包完整性、版本、更新协议、隔离冷／热启动及两种包的原生核心、媒体探测、转封装和本地合成视频播放检查。
 
