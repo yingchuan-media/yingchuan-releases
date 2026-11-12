@@ -189,3 +189,37 @@ Android 三个架构分别核验实际固定签名、包名、版本、ABI、必
 可在 [Issues](https://github.com/yingchuan-media/yingchuan-releases/issues) 反馈问题。请提供客户端版本、设备与系统版本、操作步骤、预期结果和实际表现；涉及画面问题时可附截图。
 
 提交前请移除账号、令牌、配对码、个人文件路径和带授权参数的播放地址。第三方组件的许可证随运行包提供。
+
+<!-- release-apple-stable:start -->
+
+### Apple 构建 0.1.4
+
+[版本与更新说明](https://github.com/yingchuan-media/yingchuan-releases/releases/tag/apple-v0.1.4) · 提交 `f1969f8bc7bfbf943e2444dfc18108a9b883d811` · 云端运行 #43205737464，尝试 1
+
+| 文件 | 下载 |
+| --- | --- |
+| BUILD_METADATA.json | [下载](https://github.com/yingchuan-media/yingchuan-releases/releases/download/apple-v0.1.4/BUILD_METADATA.json) |
+| SHA256SUMS.txt | [下载](https://github.com/yingchuan-media/yingchuan-releases/releases/download/apple-v0.1.4/SHA256SUMS.txt) |
+| yingchuan-0.1.4-ios-unsigned-app.zip | [下载](https://github.com/yingchuan-media/yingchuan-releases/releases/download/apple-v0.1.4/yingchuan-0.1.4-ios-unsigned-app.zip) |
+| yingchuan-0.1.4-ios-unsigned.ipa | [下载](https://github.com/yingchuan-media/yingchuan-releases/releases/download/apple-v0.1.4/yingchuan-0.1.4-ios-unsigned.ipa) |
+| yingchuan-0.1.4-macos-arm64.dmg | [下载](https://github.com/yingchuan-media/yingchuan-releases/releases/download/apple-v0.1.4/yingchuan-0.1.4-macos-arm64.dmg) |
+| yingchuan-0.1.4-macos-arm64.zip | [下载](https://github.com/yingchuan-media/yingchuan-releases/releases/download/apple-v0.1.4/yingchuan-0.1.4-macos-arm64.zip) |
+
+#### 功能改动
+
+- 红果优先使用官方单集播放协议，补齐官方系列剧／合集、动态筛选和弹幕 cursor 分页，保留权限与 Windows 播放边界。
+- 历史与追剧页接入 B站云端记录，统一已加载记录搜索、分页和本地／云端显示；本地追剧统一为一个列表。
+- 新增产品官网与跨端介绍、启动投影及滚动动效。
+- 云端统一构建 Android 三架构、Windows x64、macOS ARM64 和 iOS；Apple 产物独立发布，macOS 使用 ad-hoc 签名且未经公证，iOS 提供需自行签名的未签名构建。
+
+#### Bug 修复
+
+- 修复奈飞同日重名分集导致详情失败、影视2旧协议排除重名线路，以及通用采集重排后的分集和画质错配；不跨线路猜配。
+- 移除红果第三方备用取流，保留进程内注册会话及明确拒绝后停止的策略；取消和撤权后的迟到响应不再提交。
+- 修复本地／云端记录切换时布局跳动、背景和卡片不一致、工具缺失及封面方向猜测，不将云端进度写入本地记录。
+- 修复官网首次访问启动动画前正文闪现，保留跳过、减少动态效果与失败后的正文回退。
+- 接入 macOS 包内 Go 核心与最低系统版本校验，补齐 iOS 全新构建所需的局域网页面资源和未签名产物验证。
+
+发布记录：安装包由 GitHub Actions #43205737464 构建并校验；跨仓自动同步因 HTTP 401 中止，后续发布使用既有 GitHub 登录授权完成，保留同批云端文件和原构建元数据。
+
+<!-- release-apple-stable:end -->
