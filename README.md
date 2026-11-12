@@ -1,16 +1,32 @@
-<p align="center"><img src="assets/brand-icon.svg" width="96" alt="映川 · 澄青川流精修 A 图标"></p>
+<p align="center"><img src="assets/brand-icon.svg" width="88" alt="映川"></p>
 
 # 映川 · 客户端下载
 
-映川是一款多端视频客户端，提供站源浏览、搜索、播放、追剧、观看历史与下载管理。Windows 客户端也可在局域网内向手机、平板的浏览器提供访问入口。
+映川（YingChuan）支持站源浏览、搜索、播放、追剧、历史与下载，也可由 Windows 客户端向局域网内的手机浏览器提供访问。当前统一采用映川 V2A 品牌；本页截图来自用户提供的历史客户端，版本以各自发布记录为准。
 
-正式品牌使用澄青川流精修 A（V2A），各平台统一采用深墨双青图标。可编辑[主标识](assets/brand-logo.svg)与[应用图标](assets/brand-icon.svg)随本仓库提供。
-
-本仓库提供映川已发布客户端、功能说明与实际界面截图。安装文件位于 [Releases](https://github.com/yingchuan-media/yingchuan-releases/releases)。
+| 仓库 | 用途 |
+| --- | --- |
+| [客户端源码](https://github.com/yingchuan-media/yingchuan) | 开发、构建、设计与版本变更；私有仓库需访问权限 |
+| [站源订阅](https://github.com/yingchuan-media/yingchuan-sources) | 四类可选站源配置及检测结果 |
+| 本仓库 | 安装包、功能说明、实际截图与公开反馈 |
 
 ## 下载
 
-**当前版本：0.1.3 · Windows x64 / Android 三架构 · 固定签名预发布**
+[全部发布与历史版本](https://github.com/yingchuan-media/yingchuan-releases/releases)。正式版与预览版分开列出，iOS 暂无下载包。普通 Android 手机优先选择 arm64-v8a，32 位 ARM 选择 armeabi-v7a，x86_64 设备选择 x86_64。
+
+<!-- release-stable:start -->
+
+### 正式版
+
+尚未通过新的云端流程发布正式版，可先使用下方固定签名预发布包。
+
+<!-- release-stable:end -->
+
+<!-- release-preview:start -->
+
+### 预览版 0.1.3
+
+Windows x64 / Android 三架构 · 本地固定签名预发布
 
 本次安装包从源码仓库 main 的 `3b1d9b0e2e096203cba6156b3aee241033ca4823` 本地构建，采用映川品牌、安装标识及固定 Android 发布证书。先在源码仓库发布并下载校验，再将相同文件发布到本仓库；仍为预发布版本。
 
@@ -37,7 +53,19 @@
 
 **Android 包使用映川专用固定发布签名，属于预发布版本。** 三个 APK 均使用 Release 模式编译，包名为 `com.yingchuan.yingchuan`，后续正式发布复用同一证书。证书 SHA-256：`89b83acb459659edc357c742e76fdb8ee6f913a5d24877ff3eaf7bfb943470f0`。其他证书签名的旧测试 APK 无法直接覆盖升级，安装前请先备份需要保留的资料。
 
-其他版本见 [Windows 0.1.0](https://github.com/yingchuan-media/yingchuan-releases/releases/tag/windows-v0.1.0) 或[全部发布](https://github.com/yingchuan-media/yingchuan-releases/releases)。iOS 暂无下载包。
+
+
+#### 功能改动
+
+- 统一映川品牌、应用标识、主题与启动投影效果，调整播放器加载标识及卡片信息。
+- Android 首次使用映川独立固定发布证书，后续正式发布复用同一证书。
+
+#### Bug 修复
+
+- 整理封面作者、状态和集数信息，修复对应布局与显示问题。
+- 排除本地构建残留的旧品牌程序及重复核心库，EXE／ZIP 保留完整运行资源。
+
+<!-- release-preview:end -->
 
 ## 功能
 
@@ -92,7 +120,13 @@
 3. 需要离线观看时，从内容菜单选择下载；竖屏可从设置进入下载管理。
 4. 需要用其他设备的浏览器访问时，在设置的数据同步分类开启局域网页面，按客户端显示的地址与配对流程连接。主机客户端需保持运行。
 
-此处提供的客户端采用本地构建，请从本仓库发布页手动下载更新。ZIP 中的 `data`、DLL 和其他资源属于运行所需文件，不要只复制其中的 EXE。
+从本仓库发布页或客户端检查更新下载安装包，按实际签名与发布身份选择安装方式。ZIP 中的 `data`、DLL 和其他资源属于运行所需文件，不要只复制其中的 EXE。
+
+## 发布与更新说明
+
+云端构建先在源码仓库发布完整安装包，验证源码标签并逐附件下载校验成功后，再同步本仓库；两边附件字节、版本、签名和说明保持一致。每次说明记录该版本的功能改动与 Bug 修复，公开附件再次下载验证后更新上方对应渠道，保留另一渠道与实际截图。
+
+同步失败时保留已成功的源码 Release 和可能的目标草稿，不删除旧发布，不自动覆盖同名标签。提交、PR 或合并不会自动触发构建。历史本地发布按元数据明确标记来源，不能据此推断新的云端流程已经验收。
 
 ## 版本与验证
 
