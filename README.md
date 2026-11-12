@@ -6,7 +6,6 @@
 
 | 仓库 | 用途 |
 | --- | --- |
-| [客户端源码](https://github.com/yingchuan-media/yingchuan) | 开发、构建、设计与版本变更；私有仓库需访问权限 |
 | [站源订阅](https://github.com/yingchuan-media/yingchuan-sources) | 四类可选站源配置及检测结果 |
 | 本仓库 | 安装包、功能说明、实际截图与公开反馈 |
 
