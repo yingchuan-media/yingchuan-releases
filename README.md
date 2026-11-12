@@ -64,6 +64,26 @@ Windows x64 / Android 三架构 · 本地固定签名预发布
 - 整理封面作者、状态和集数信息，修复对应布局与显示问题。
 - 排除本地构建残留的旧品牌程序及重复核心库，EXE／ZIP 保留完整运行资源。
 
+<!-- release-macos-preview:start -->
+
+### macOS Apple Silicon · 0.1.3 本地预发布
+
+适用于 Apple Silicon（ARM64），需要 macOS 13 或更新版本。
+
+| 文件 | 下载 |
+| --- | --- |
+| DMG 安装包 | [macOS ARM64 DMG](https://github.com/yingchuan-media/yingchuan-releases/releases/download/macos-v0.1.3-local-cfdfbf5cb927/yingchuan-0.1.3-macos-arm64.dmg) |
+| 文件校验 | [SHA256SUMS.txt](https://github.com/yingchuan-media/yingchuan-releases/releases/download/macos-v0.1.3-local-cfdfbf5cb927/SHA256SUMS.txt) |
+| 构建信息 | [build-info.json](https://github.com/yingchuan-media/yingchuan-releases/releases/download/macos-v0.1.3-local-cfdfbf5cb927/build-info.json) |
+
+打开 DMG，将“映川.app”拖入“应用程序”。本地 ad-hoc 签名，未经 Apple 公证；若系统拦截，可在“系统设置 → 隐私与安全性”允许打开。
+
+此包由本地 macOS 适配源码构建，非 GitHub Actions 产物。已验证签名、文件完整性、Go 核心、FFmpeg 探测与转封装及本地合成视频解码进度；真实站源、完整界面和其他设备尚未完整验收。macOS 当前不启用投屏和下载启动条件策略。
+
+[本次 macOS 发布记录](https://github.com/yingchuan-media/yingchuan-releases/releases/tag/macos-v0.1.3-local-cfdfbf5cb927)。
+
+<!-- release-macos-preview:end -->
+
 <!-- release-preview:end -->
 
 ## 功能
