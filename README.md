@@ -11,7 +11,7 @@
 
 ## 下载
 
-[全部发布与历史版本](https://github.com/yingchuan-media/yingchuan-releases/releases)。正式版与预览版分开列出，iOS 暂无下载包。普通 Android 手机优先选择 arm64-v8a，32 位 ARM 选择 armeabi-v7a，x86_64 设备选择 x86_64。
+[全部发布与历史版本](https://github.com/yingchuan-media/yingchuan-releases/releases)。正式版与历史预览版分开列出，Android 三架构／Windows x64 与 macOS ARM64／iOS 使用独立发布页。macOS 使用 ad-hoc 签名且未经公证；iOS 提供未签名 IPA／应用 ZIP，需自行签名后安装。当前版本下载见对应渠道区块。普通 Android 手机优先选择 arm64-v8a，32 位 ARM 选择 armeabi-v7a，x86_64 设备选择 x86_64。
 
 <!-- release-stable:start -->
 
